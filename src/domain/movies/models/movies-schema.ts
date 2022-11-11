@@ -1,6 +1,14 @@
 import mongoose from 'mongoose';
 
-const movieSchema = new mongoose.Schema({
+export interface IMovie {
+    title: string;
+    originalTitle: string;
+    description: string;
+    releaseDate: string;
+    rate_score: string;
+}
+
+const movieSchema = new mongoose.Schema<IMovie>({
     title: {
         type: String,
         required: true,
@@ -26,4 +34,4 @@ const movieSchema = new mongoose.Schema({
     },
 });
 
-export const Movie = mongoose.model('Movie', movieSchema);
+export const Movie = mongoose.model<IMovie>('Movie', movieSchema);

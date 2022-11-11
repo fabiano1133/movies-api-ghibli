@@ -1,10 +1,11 @@
-import express from 'express';
 import * as dotenv from 'dotenv';
+import express from 'express';
 import { getFilms } from './jobs';
 
 dotenv.config();
 
 const app = express();
+app.use(express.json());
 
 getFilms();
 

@@ -1,5 +1,8 @@
+import * as dotenv from 'dotenv';
 import axios from 'axios';
 
+dotenv.config();
+
 export const api = axios.create({
-    baseURL: 'https://ghibliapi.herokuapp.com/',
+    baseURL: process.env.API_URL,
 });

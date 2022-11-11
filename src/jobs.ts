@@ -1,7 +1,7 @@
 import { api } from './config/api/api';
 
 export const getFilms = async () => {
-    const response = await api.get('/films');
+    const response = await api.get('/films?limit=200');
     console.log(
         response.data.map((film: any) => {
             return {

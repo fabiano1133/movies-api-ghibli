@@ -1,8 +1,10 @@
 import * as dotenv from 'dotenv';
 import express from 'express';
+import { database } from './config/database';
 import { getFilms } from './jobs';
 
 dotenv.config();
+database();
 
 const app = express();
 app.use(express.json());

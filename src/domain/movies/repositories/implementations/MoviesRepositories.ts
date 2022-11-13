@@ -1,6 +1,5 @@
 import { IMovie, Movie } from '../../models/movies-schema';
 import { IMoviesRepository } from '../IMoviesRepository';
-import { api } from '../../../../config/api/api';
 
 export class MoviesRepositories implements IMoviesRepository {
     async getFilms(): Promise<IMovie[]> {

@@ -1,9 +1,16 @@
-version: '3'
+version: '3.9'
+
 services:
-  mongodb:
-    container_name: movies_api_mongodb
-    image: mongo
-    volumes:
-      - ./data:/data/db
-    ports:
-      - "27017:27017"
+    database:
+        image: mongo:latest
+        container_name: movies_database_api
+        restart: always
+        ports:
+            - 27017:27017
+        environment:
+            MONGO_INITDB_DATABASE: movies_api_mongodb
+        volumes:
+            - ./data:/data/db
+volumes:
+    data:
+        driver: local

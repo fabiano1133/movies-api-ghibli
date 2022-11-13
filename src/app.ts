@@ -5,6 +5,7 @@ import { getFilms } from './jobs';
 import { movieRouter } from './shared/http/routes';
 
 dotenv.config();
+
 database();
 
 export const app = express();

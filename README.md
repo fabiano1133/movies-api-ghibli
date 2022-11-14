@@ -23,11 +23,11 @@ API que starta um jobs que recupera uma lista de filmes da API da GUIBLI-API e g
 
 ## Passo 1 - Executando a Aplicação
 
-- Acessar o repositório no Github: link
+- Acessar o repositório no Github: [repositório](https://github.com/fabiano1133/movies-api-ghibli)
 - Clonar o repositório
 - Acessar a pasta do projeto clonada em sua máquina
 ```bash
-$ cd movies_api
+$ cd movies-api-ghibli
 ```
 - Abrir a pasta do projeto em um editor de sua preferência.
 Para exemplificar, utilizei o VS Code.

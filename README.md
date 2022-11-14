@@ -1,6 +1,6 @@
-# Movies API GUIBLI-API
+# Movies API GHIBLI-API
 
-API que starta um jobs que recupera uma lista de filmes da API da GUIBLI-API e grava em uma base de dados. Nesta API temos um endpoint que recupera uma lista de filmes da base de dados previamente populada pelo jobs.
+API que starta um jobs que recupera uma lista de filmes da API da GHIBLI-API e grava em uma base de dados. Nesta API temos um endpoint que recupera uma lista de filmes da base de dados previamente populada pelo jobs.
 
 ![Workflow](https://github.com/fabiano1133/movies-api-ghibli/blob/main/workflow-api.png)
 

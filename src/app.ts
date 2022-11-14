@@ -16,7 +16,7 @@ app.use(express.json());
 
 app.use(movieRouter);
 
-// getFilms();
+getFilms();
 
 const specs = swaggerJsdoc(options);
 app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(specs));

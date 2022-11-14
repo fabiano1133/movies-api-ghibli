@@ -2,7 +2,7 @@
 
 API que starta um jobs que recupera uma lista de filmes da API da GHIBLI-API e grava em uma base de dados. Nesta API temos um endpoint que recupera uma lista de filmes da base de dados previamente populada pelo jobs.
 
-![alt text](http://url/to/img.png)
+![](https://github.com/fabiano1133/movies-api-ghibli/blob/main/workflow-api.png)
 
 ## Bibliotecas utilizadas no projeto
 - [Axios](https://axios-http.com/docs/intro)
@@ -13,6 +13,8 @@ API que starta um jobs que recupera uma lista de filmes da API da GHIBLI-API e g
 - [mongoose-paginate-v2](https://www.npmjs.com/package/mongoose-paginate-v2)
 - [Eslint](https://eslint.org/docs/latest/developer-guide/nodejs-api)
 - [Prettier](https://prettier.io/)
+- [swagger-jsdoc](https://www.npmjs.com/package/swagger-jsdoc)
+- [swagger-ui-express](https://www.npmjs.com/package/swagger-ui-express)
 
 ## Linguagem utilizada no projeto
 - [Javascript - Node JS](https://nodejs.org/en/)
@@ -53,6 +55,12 @@ $ docker-compose up
 $ yarn dev
 ```
 ## Passo 2 - Acessando a lista de Filmes
+
+- Acessar pelo swagger
+```
+http://localhost:3000/api-docs
+```
+ou
 
 - Abrir o Insomnia ou outro client de sua preferência
 - Acessar o endpoint 

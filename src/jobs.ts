@@ -16,6 +16,7 @@ export const getFilms = async () => {
                 rate_score: film.rt_score,
             };
         });
+        console.log(`Films saved: ${films.length}`);
         await repositorie.save(films);
     } catch (error) {
         return error;

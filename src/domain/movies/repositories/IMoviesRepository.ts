@@ -1,6 +1,5 @@
-import { IMovie } from '../models/movies-schema';
-
+import { IMovie, IMovieDocument } from '../models/movies-schema';
 export interface IMoviesRepository {
     save(films: IMovie): Promise<void>;
-    getFilms(): Promise<IMovie[]>;
+    getFilms(limit: number, page: number): Promise<IMovie[]>;
 }

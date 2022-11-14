@@ -5,7 +5,11 @@ export class MoviesFindAllController {
     async handle(request: Request, response: Response): Promise<Response> {
         const moviesFindAll = new MoviesFindAll();
 
-        const films = await moviesFindAll.execute();
+        const limtValue = Number(request.query.limit);
+
+        const pageValue = Number(request.query.page);
+
+        const films = await moviesFindAll.execute(limtValue, pageValue);
 
         return response.json(films);
     }

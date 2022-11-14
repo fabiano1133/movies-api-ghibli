@@ -1,6 +1,6 @@
-import { IMovie } from '../movies/models/movies-schema';
+import { IMovie } from '../models/movies-schema';
 
-import { MoviesRepositories } from '../movies/repositories/implementations/MoviesRepositories';
+import { MoviesRepositories } from '../repositories/implementations/MoviesRepositories';
 
 export class MoviesFindAll {
     async execute(limit: number, page: number): Promise<IMovie[]> {

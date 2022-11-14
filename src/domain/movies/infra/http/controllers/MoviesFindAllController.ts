@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { MoviesFindAll } from '../../../../useCases/MoviesFindAll';
+import { MoviesFindAll } from '../../../useCases/MoviesFindAll';
 
 export class MoviesFindAllController {
     async handle(request: Request, response: Response): Promise<Response> {

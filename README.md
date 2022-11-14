@@ -1,6 +1,8 @@
 # Movies API GUIBLI-API
 
-API que starta um jobs que recupera uma lista de filmes da API da GUIBLI-API e grava em uma base de dados. Nesta API temos um endpoint que recupera uma lista de filmes da base de dados previamente populada pelo jobs. 
+API que starta um jobs que recupera uma lista de filmes da API da GUIBLI-API e grava em uma base de dados. Nesta API temos um endpoint que recupera uma lista de filmes da base de dados previamente populada pelo jobs.
+
+![alt text](http://url/to/img.png)
 
 ## Bibliotecas utilizadas no projeto
 - [Axios](https://axios-http.com/docs/intro)
